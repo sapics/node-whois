@@ -98,7 +98,7 @@ cleanParsingErrors = (string) =>
 
 					@lookup addr, options, (err, parts) =>
 						if err?
-							return done err
+							return done err, parts
 
 						if options.verbose
 							done null, [
